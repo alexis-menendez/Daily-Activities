@@ -1,0 +1,14 @@
+.App main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.App .wrapper {
+  display: flex;
+}
+
+.App h1 {
+  text-align: center;
+  font-size: 48px;
+}

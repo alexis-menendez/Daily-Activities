@@ -1,0 +1,24 @@
+.StructuralTypes form {
+  width: 70%;
+  margin: 10px auto;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 5px 5px 5px #bdc3c7;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+}
+.StructuralTypes h2 {
+  text-align: center;
+}
+.StructuralTypes * {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.StructuralTypes button {
+  background-color: #bdc3c7;
+}

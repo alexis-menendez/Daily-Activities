@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "guestName": "Gamon Rarza",
+    "email": "grar86@example.com",
+    "homeAddress": "123 Main St, Springfield, IL 62701"
+  },
+  {
+    "id": 2,
+    "guestName": "Rander Xapstine",
+    "email": "rxap123@example.com",
+    "homeAddress": "456 Oak St, Madison, WI 53703"
+  },
+  {
+    "id": 3,
+    "guestName": "Fatt Myke",
+    "email": "fmyke@example.com",
+    "homeAddress": "789 Pine St, Austin, TX 78701"
+  }
+]

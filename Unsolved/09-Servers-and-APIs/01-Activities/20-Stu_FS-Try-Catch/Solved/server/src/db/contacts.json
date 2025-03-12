@@ -1,0 +1,26 @@
+[
+  {
+    "id": "5809ea63-69b2-4bac-970a-68b84dcf0d62",
+    "contactName": "Gamon Rarza",
+    "phone": "555-555-1234",
+    "email": "grar84@example.com"
+  },
+  {
+    "id": "5809ea63-69b2-4bac-970a-68b84dcf0d85",
+    "contactName": "Rander Xapstine",
+    "phone": "555-555-9123",
+    "email": "rxap123@example.com"
+  },
+  {
+    "id": "ee464ae8-41df-4d61-8895-d199217f8141",
+    "contactName": "Fatt Myke",
+    "phone": "555-555-5555",
+    "email": "fmyke@example.com"
+  },
+  {
+    "id": "42b574bd-a687-4772-9c56-f5450293947e",
+    "contactName": "Jon Doe",
+    "phone": "555-969-6523",
+    "email": "testing123@example.com"
+  }
+]

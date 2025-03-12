@@ -1,0 +1,22 @@
+.InvoiceForm {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 5px 5px 5px #392e4a;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+}
+.InvoiceForm * {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.InvoiceForm button {
+  background-color: #392e4a;
+  color: white;
+}

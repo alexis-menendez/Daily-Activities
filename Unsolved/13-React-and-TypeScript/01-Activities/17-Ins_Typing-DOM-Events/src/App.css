@@ -1,0 +1,59 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font: 1rem sans-serif;
+}
+
+/* make container have a light blue background color and set a size */
+.container {
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  max-width: 600px;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem;
+}
+
+/* make form have more space between elements and have the inputs all be the same size */
+form input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit {
+  background-color: green;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#submit:hover {
+  background-color: darkgreen;
+}
+
+button {
+  background-color: lightcoral;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lastUser {
+  padding: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}

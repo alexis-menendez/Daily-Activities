@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "productName": "Cat Tree",
+    "productDescription": "6 feet tall, with a hammock, enclosed house, and perch",
+    "price": 129.99,
+    "quantity": 12,
+    "tags": ["pets", "furniture"]
+  },
+  {
+    "id": 2,
+    "productName": "Folding Table",
+    "productDescription": "White table with two foldable sides to expand surface.  Includes storage compartment on underside",
+    "price": 109.99,
+    "quantity": 0,
+    "tags": ["furniture"]
+  },
+  {
+    "id": 3,
+    "productName": "Ark Nova",
+    "productDescription": "Award-winning board game wherein players take on the role of sustainable eco-conscious zookeepers.  Includes over 200 unique animal cards",
+    "price": 99.99,
+    "quantity": 50,
+    "tags": ["toys", "gifts"]
+  },
+  {
+    "id": 4,
+    "productName": "1000 Origami Cranes",
+    "productDescription": "The legend of senbazuru states that anyone or group who folds 1000 paper cranes will have one wish granted.  This product includes 999 pre-folded cranes, one piece of origami paper, and instructions on folding a paper crane",
+    "price": 24.99,
+    "quantity": 2,
+    "tags": ["gifts"]
+  },
+  {
+    "id": 5,
+    "productName": "Fleece Blanket",
+    "productDescription": "Standard sized polar fleece blanket with cartoon kitten print",
+    "price": 9.99,
+    "quantity": 500,
+    "tags": ["homegoods", "gifts"]
+  }
+]

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+  </head>
+  <body class="min-100-vh flex-column">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>HTTP and CRUD</h1>
+    </header>
+    <main class="flex-row justify-center align-center gap-2 col-auto p-4 bg-light">
+      <section class="card card-rounded bg-white col-5">
+        <header class="card-header text-center">
+          <h2 class="text-white" id="form-heading">
+            CREATE Data
+          </h2>
+        </header>
+        <div class="text-center p-4">
+          <p class="card-body">
+            Add a user to the database
+          </p>
+          <form id="user-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group">
+                <input class="form-input first-name" type="text" id="first-name-input" placeholder="John"
+                  aria-labelledby="form-heading" />
+                <input class="form-input last-name" type="text" id="last-name-input" placeholder="Doe"
+                  aria-labelledby="form-heading" />
+                <input class="form-input email" type="email" id="email-input" placeholder="test@test.com"
+                  aria-labelledby="form-heading" />
+                  <div class="input-group-append">
+                  <button type="submit" class="btn btn-danger" id="post-button">
+                    Create User
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="flex-column gap-2 p-2" id="post-container"></div>
+      </section>
+      <section class="card card-rounded bg-white col-5">
+        <header class="card-header text-center">
+          <h2 class="text-white">
+            READ Data
+          </h2>
+        </header>
+        <div class="text-center p-4">
+          <p class="card-body">
+            Click button to retrieve data
+          </p>
+          <button class="btn btn-danger" id="fetch-button">
+            Get Users
+          </button>
+        </div>
+        <div class="flex-row justify-center gap-2 p-2" id="users"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

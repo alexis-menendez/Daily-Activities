@@ -1,0 +1,50 @@
+.ProductCard {
+  box-sizing: border-box;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 1px 1px 5px #5a228b;
+}
+
+.ProductCard.sold-out {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.ProductCard h2 {
+  font-size: 36px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.ProductCard h3 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.ProductCard span {
+  color: #5a228b;
+  border: 1px solid #5a228b;
+  border-radius: 5px;
+  font-size: 24px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.ProductCard button {
+  display: block;
+  font-size: 24px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.ProductCard button:enabled {
+  background: #5a228b;
+  color: white;
+  cursor: pointer;
+}

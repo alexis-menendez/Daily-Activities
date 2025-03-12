@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/styles/jass.css" />
+  <title>Contact List</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="container-fluid text-center text-white bg-dark p-1">
+      <h1>Contact List</h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row p-5">
+        <aside class="col-3 p-3">
+          <h2 id="form-heading" class="mt-1 h3 form-label">
+            Add a Contact:
+          </h2>
+          <form id="add-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group">
+                <input class="form-input" type="text" id="name-input" placeholder="John Doe"
+                  aria-labelledby="form-heading" />
+                <input class="form-input" type="text" id="phone-input" placeholder="555-555-5555"
+                  aria-labelledby="form-heading" />
+                <input class="form-input" type="text" id="email-input" placeholder="test@test.com"
+                  aria-labelledby="form-heading" />
+                <div class="input-group-append text-center">
+                  <button type="submit" class="btn btn-dark" id="add-button" aria-label="submit add">
+                    Add
+                  </button>
+                  <hr class="hr contact-hr" />
+                </div>
+              </div>
+        </aside>
+        <main class="col-9 p-3 text-center">
+          <h2 class="mt-1 h3 form-label">Contacts:</h2>
+          <div id="contact-list" class="contact-list row">
+            <!-- Contacts will be added here -->
+          </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

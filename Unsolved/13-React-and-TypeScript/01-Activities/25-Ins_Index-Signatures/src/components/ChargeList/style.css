@@ -1,0 +1,23 @@
+.ChargeList {
+  width: 70%;
+  margin: 25px auto;
+}
+
+.ChargeList .charge-div {
+  padding: 10px;
+  border-bottom: 2px dotted white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ChargeList .charge-div:last-of-type {
+  border-bottom-style: solid;
+}
+
+.ChargeList .charge-div:nth-of-type(odd) {
+  background: #392e4a;
+}
+
+.ChargeList h2 {
+  padding: 5px;
+}
