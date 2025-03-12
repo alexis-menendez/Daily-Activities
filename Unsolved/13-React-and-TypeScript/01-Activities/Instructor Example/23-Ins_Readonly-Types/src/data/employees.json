@@ -1,0 +1,57 @@
+[
+  {
+    "id": "e7b8e2c8-fb8e-4d5c-9f8c-a6f6d87f4c56",
+    "fullName": "Lian Chen",
+    "userName": "lianchen",
+    "location": {
+      "city": "Boise",
+      "state": "ID"
+    },
+    "salary": 125000.0,
+    "skills": ["JavaScript", "React", "Node.js"]
+  },
+  {
+    "id": "4a6a0c58-4e6d-4a0b-b3b0-3b7c3d7f5f2a",
+    "fullName": "Aarav Patel",
+    "userName": "aaravp",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA"
+    },
+    "salary": 175000.0,
+    "skills": ["Python", "Django", "Machine Learning"]
+  },
+  {
+    "id": "d3b0b0e0-89f2-4e4f-9f2b-d6d5d2f4e0b0",
+    "fullName": "Fatima Al-Farsi",
+    "userName": "fatimaa",
+    "location": {
+      "city": "Chicago",
+      "state": "IL"
+    },
+    "salary": 85000.0,
+    "skills": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": "f7d8e8c0-9f8e-4d0c-9f8c-b7d6e5f4d7a9",
+    "fullName": "Miguel Rivera",
+    "userName": "miguelr",
+    "location": {
+      "city": "Seattle",
+      "state": "WA"
+    },
+    "salary": 130000.0,
+    "skills": ["Java", "Spring Boot", "Microservices"]
+  },
+  {
+    "id": "a7d9e9e8-c9e8-4d0f-9f8b-c6d8e7f4c7b0",
+    "fullName": "Ayumi Nakamura",
+    "userName": "ayumin",
+    "location": {
+      "city": "Austin",
+      "state": "TX"
+    },
+    "salary": 105000.0,
+    "skills": ["C#", ".NET", "Azure"]
+  }
+]
