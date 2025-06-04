@@ -1,0 +1,24 @@
+{
+    "rooms": [
+        {
+            "type": "single",
+            "price": 99,
+            "available": 7
+        },
+        {
+            "type": "double",
+            "price": 149,
+            "available": 9
+        },
+        {
+            "type": "queen",
+            "price": 189,
+            "available": 3
+        },
+        {
+            "type": "king",
+            "price": 209,
+            "available": 1
+        }
+    ]
+}

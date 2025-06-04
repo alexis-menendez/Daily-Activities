@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProfileCard > should render a ProfileCard that matches the snapshot 1`] = `
+"<div class="p-3 card">
+  <h2>John Doe</h2>
+  <div>
+    <p>JOHN@doe.com</p>
+    <p>321-456-7890</p>
+  </div>
+</div>"
+`;

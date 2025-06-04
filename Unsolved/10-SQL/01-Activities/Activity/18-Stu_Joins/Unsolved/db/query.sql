@@ -1,1 +1,0 @@
--- Add your code below and execute file in the PostgreSQL Shell --

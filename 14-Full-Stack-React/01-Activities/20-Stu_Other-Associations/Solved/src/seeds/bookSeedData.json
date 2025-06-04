@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Make It Stick: The Science of Successful Learning",
+    "isbn": "978-0674729018",
+    "pages": 336,
+    "edition": 1,
+    "isPaperback": false,
+    "authorId": 1
+  },
+  {
+    "title": "Essential Scrum: A Practical Guide to the Most Popular Agile Process",
+    "isbn": "978-0137043293",
+    "pages": 500,
+    "edition": 1,
+    "isPaperback": true,
+    "authorId": 2
+  },
+  {
+    "title": "White Fragility: Why It's So Hard for White People to Talk About Racism",
+    "isbn": "978-0807047415",
+    "pages": 192,
+    "edition": 2,
+    "isPaperback": true,
+    "authorId": 3
+  },
+  {
+    "title": "The Pragmatic Programmer: Your Journey To Mastery",
+    "isbn": "978-0135957059",
+    "pages": 352,
+    "edition": 2,
+    "isPaperback": false,
+    "authorId": 4
+  },
+  {
+    "title": "The Art of Computer Programming, Vol. 1: Fundamental Algorithms",
+    "isbn": "978-0201896831",
+    "pages": 672,
+    "edition": 3,
+    "isPaperback": false,
+    "authorId": 5
+  },
+  {
+    "title": "Algorithms of Oppression: How Search Engines Reinforce Racism",
+    "isbn": "978-1479837243",
+    "pages": 256,
+    "edition": 1,
+    "isPaperback": true,
+    "authorId": 6
+  }
+]

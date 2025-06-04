@@ -1,0 +1,30 @@
+#TODO: What is this line of code doing
+name: Deploy
+
+#TODO: What is this block of code doing
+on:
+    push:
+      branches: [main]
+    pull_request:
+      branches:
+        - main
+        
+#TODO: What is this block of code doing   
+jobs:
+    ci:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Test
+          run: |
+            npm install
+            npm run test
+
+        - name: Deploy
+          if: github.ref == 'refs/heads/main'
+          env:
+            DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          run: |
+            curl "$DEPLOY_URL"
+   

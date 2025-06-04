@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FilmCard > should match snapshot 1`] = `
+"<figure><img alt="Gamera, the Guardian of the Universe" src="https://m.media-amazon.com/images/M/MV5BNTFkNzAxYTUtZGE4ZC00NjBkLWE3ZDAtYjE4NzQ0MDBhZWQwXkEyXkFqcGdeQXVyNjQ2MzU1NzQ@._V1_SX300.jpg"></figure>
+<article class="details">
+  <h2>Gamera, the Guardian of the Universe</h2>
+  <p><strong>Directed By:</strong> Shûsuke Kaneko</p>
+  <p><strong>Starring:</strong> Tsuyoshi Ihara, Akira Onodera, Shinobu Nakayama</p>
+  <p><strong>Released:</strong> 16 Apr 1997</p>
+  <p><strong>Genre:</strong> Action, Drama, Fantasy</p>
+</article>
+<article class="plot">
+  <p><strong>Plot:</strong> An ornithologist investigates reports of a monstrous new species of bird just as a teenage girl is gifted an amulet found on mysterious atoll. As the creatures begin to attack, an ancient guardian with a bond to the girl emerges.</p>
+</article>
+<aside class="icons"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" style="font-size: 50px; cursor: pointer;" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 5H14V7H2V5Z" fill="currentColor"></path>
+    <path d="M2 9H14V11H2V9Z" fill="currentColor"></path>
+    <path d="M10 13H2V15H10V13Z" fill="currentColor"></path>
+    <path d="M16 9H18V13H22V15H18V19H16V15H12V13H16V9Z" fill="currentColor"></path>
+  </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" style="font-size: 50px; cursor: pointer;" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 0 0-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 0 0 0-17.47C428.89 172.28 347.8 112 255.66 112z"></path>
+    <circle cx="256" cy="256" r="80" fill="none" stroke-miterlimit="10" stroke-width="32"></circle>
+  </svg></aside>"
+`;

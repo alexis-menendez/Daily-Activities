@@ -1,0 +1,63 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3.3.1
+
+jobs:
+  start-server:
+        docker:
+          - image: cypress/base:latest
+        steps:
+          - checkout
+          - run:
+              name: Install dependencies
+              command: npm install
+          - run:
+              name: Build the app
+              command: npm run build
+  deploy-to-render-staging:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - run:
+          name: Deploy to Render Staging
+          command: |
+            echo "Deploying to Render Staging"
+            curl $RENDER_STAGING_DEPLOYHOOK
+  deploy-to-render-production:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - run:
+          name: Deploy to Render Production
+          command: |
+            echo "Deploying to Render production"
+            curl $RENDER_PRODUCTION_DEPLOYHOOK
+
+workflows:
+  run-tests-and-deploy-to-staging-hold-then-production:
+    jobs:
+      - start-server
+          # Make sure to add MONGODB_URI to ENVIRONMENT VARIABLES in CircleCI so that the tests can connect to the database
+      - cypress/run:
+          name: run-component-tests
+          cypress-command: npx cypress run --component
+      - deploy-to-render-staging:
+          requires:
+            - run-component-tests
+          filters:
+            branches:
+              only: main
+      - hold:
+          # The hold job requires approval before the deploy-to-render-production job can run. To provide approval, you must click the approve button in the paused workflow in the CircleCI dashboard.
+          type: approval
+          requires:
+            - deploy-to-render-staging
+      - deploy-to-render-production:
+          # We can specify that the only requirement for this job is the hold job because the the hold job requires the deploy-render-staging job to run first, and the deploy-render-staging job requires the run-e2e-tests and run-component-tests jobs to run first. The hold job acts as a gatekeeper to the deploy-render-production job.
+          requires:
+            - hold
+          filters:
+            branches:
+              only: main
+              

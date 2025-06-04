@@ -1,0 +1,5 @@
+[
+  { "name": "JollyGuru", "password": "password", "email": "test@test.com" },
+  { "name": "SunnyScribe", "password": "password", "email": "test2@test.com" },
+  { "name": "RadiantComet", "password": "password", "email": "test3@test.com" }
+]

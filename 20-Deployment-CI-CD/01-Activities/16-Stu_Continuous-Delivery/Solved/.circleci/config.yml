@@ -1,0 +1,43 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3.3.1
+
+jobs:
+  start-server:
+        docker:
+          - image: cypress/base:latest
+        steps:
+          - checkout
+          - run:
+              name: Install dependencies
+              command: npm install
+          - run:
+              name: Build the app
+              command: npm run build
+  deploy-to-render-staging:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - run:
+          name: Deploy to Render Staging
+          # In the following command, we are echoing a message to the console and then using curl to send a GET request to the Render Deploy Hook that is an environment variable in CircleCI.
+          command: |
+            echo "Deploying to Render Staging"
+            curl $RENDER_STAGING_DEPLOYHOOK
+
+workflows:
+  run-tests-and-deploy-to-staging:
+    jobs:
+      - start-server
+      - cypress/run:
+          name: run-component-tests
+          cypress-command: npx cypress run --component
+      - deploy-to-render-staging:
+          # The requires key specifies that the deploy-to-render-staging job requires the run-e2e-tests and run-component-tests jobs to be completed before it can run. If either of the two jobs fails, the deploy-to-render-staging job will not run.
+          requires:
+            - run-component-tests
+          # The filters key specifies that the deploy-to-render-staging job will only run when changes are pushed to the main branch.
+          filters:
+            branches:
+              only: main

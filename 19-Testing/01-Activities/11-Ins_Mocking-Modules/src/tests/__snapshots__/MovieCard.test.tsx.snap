@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MovieCard > should render a MovieCard that matches the snapshot 1`] = `
+"<div class="card-body">
+  <h3 class="card-title">Longlegs</h3>
+  <p class="card-text">In pursuit of a serial killer, an FBI agent uncovers a series of occult clues that she must solve to end his terrifying killing spree.</p>
+  <div>
+    <p>Year Released: 2023</p>
+    <p>IMDb Rating: 9.9</p>
+  </div>
+</div>"
+`;
